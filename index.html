@@ -1,79 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Top Tax Advisor</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Tax Advisor | Tax & Business Consultancy</title>
 <style>
-body{
-font-family:Arial,sans-serif;
+*{
 margin:0;
 padding:0;
-background:#f5f8ff;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+body{
+background:#f7f9fc;
+color:#333;
+line-height:1.6;
 }
 header{
-background:#003366;
+background:#003c8f;
 color:white;
-padding:40px;
-text-align:center;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
-section{
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+.logo img{
+height:60px;
+border-radius:8px;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+}
+.hero{
+background:url('TOPTAX BANNER.jpeg') center center/cover no-repeat;
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+}
+.hero::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+}
+.hero-content{
+position:relative;
+z-index:2;
+color:white;
+max-width:900px;
 padding:20px;
 }
-h2{
-color:#003366;
+.hero h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+.hero p{
+font-size:1.2rem;
+margin-bottom:25px;
 }
 .btn{
 display:inline-block;
-padding:12px 20px;
-background:#003366;
+background:#007bff;
 color:white;
+padding:14px 28px;
+border-radius:6px;
 text-decoration:none;
-border-radius:5px;
+font-weight:bold;
+margin:8px;
 }
-footer{
-background:#003366;
-color:white;
+.btn:hover{
+background:#0056c7;
+}
+section{
+padding:80px 8%;
+}
+.section-title{
 text-align:center;
-padding:15px;
+font-size:2rem;
+margin-bottom:40px;
+color:#003c8f;
+}
+.about{
+text-align:center;
+max-width:1000px;
+margin:auto;
+font-size:1.1rem;
+}
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+.service-card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+.service-card:hover{
+transform:translateY(-5px);
 }
 </style>
 </head>
 <body>
-
 <header>
-<h1>Top Tax Advisor</h1>
-<p>Your Trusted Tax & Business Consultancy Partner</p>
+<div class="logo">
+<img src="TOPTAX LOGO.jpeg" alt="Top Tax Advisor Logo">
+<div>
+<h2>Top Tax Advisor</h2>
+</div>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
+<section class="hero">
+<div class="hero-content">
+<h1>Your Trusted Tax & Business Consultancy Partner</h1>
+<p>Let Us Handle Your Tax So You Can Focus On Growing Your Business.</p>
 
-<section>
-<h2>Our Services</h2>
-<ul>
-<li>Income Tax Return Filing</li>
-<li>GST Registration</li>
-<li>GST Monthly Filing</li>
-<li>Private Limited Company Registration</li>
-<li>LLP Registration</li>
-<li>MSME / Udyam Registration</li>
-<li>Labour Registration</li>
-<li>Net Worth Certificates</li>
-<li>CA Certificates</li>
-</ul>
+Call Now
+WhatsApp
+
+</div>
 </section>
-
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<div class="about">
+<p>
+Top Tax Advisor is a professional tax and business consultancy firm helping individuals,
+startups, professionals and businesses with taxation, registrations, compliance and advisory services.
+Our mission is to provide accurate guidance, timely filing and reliable support so our clients can focus on growth while we handle compliance.
+</p>
+</div>
+</section>
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="service-card">
+<h3>Income Tax Filing</h3>
+<p>ITR filing for salaried individuals, businesses, professionals and investors.</p>
+</div>
+<div class="service-card">
+<h3>GST Registration</h3>
+<p>GST registration, amendments and GST cancellation services.</p>
+</div>
+<div class="service-card">
+<h3>GST Return Filing</h3>
+<p>Monthly, quarterly and annual GST return filing support.</p>
+</div>
+<div class="service-card">
+<h3>Private Limited Company</h3>
+<p>Company incorporation and ROC compliance assistance.</p>
+</div>
+<div class="service-card">
+<h3>LLP Registration</h3>
+<p>Limited Liability Partnership registration and compliance services.</p>
+</div>
+<div class="service-card">
+<h3>MSME / Udyam Registration</h3>
+<p>Quick registration and government scheme support.</p>
+</div>
+<div class="service-card">
+<h3>Labour Registration</h3>
+<p>Labour licenses and employment compliance services.</p>
+</div>
+<div class="service-card">
+<h3>CA & Net Worth Certificates</h3>
+<p>Professional certification support for loans, visas and business requirements.</p>
+</div>
+<div class="service-card">
+<h3>Business Compliance</h3>
+<p>End-to-end compliance solutions for businesses and startups.</p>
+</div>
+</div>
+</section>
 <section>
-<h2>Contact Us</h2>
-<p>📞 +91 9951044602</p>
-<p>📧 toptaxadvisor123@gmail.com</p>
-<p>📍 Mehdipatnam, Hyderabad</p>
-
-<a class="btn" href="https://wa.me/919951044602">
+<h2 class="section-title">Why Choose Us?</h2>
+<div class="services">
+<div class="service-card">
+<h3>Professional Guidance</h3>
+<p>Reliable tax and business consultancy services.</p>
+</div>
+<div class="service-card">
+<h3>Timely Service</h3>
+<p>Never miss important filing deadlines.</p>
+</div>
+<div class="service-card">
+<h3>Customer Focused</h3>
+<p>Personalized support tailored to your needs.</p>
+</div>
+<div class="service-card">
+<h3>Affordable Solutions</h3>
+<p>Cost-effective services for individuals and businesses.</p>
+</div>
+</div>
+</section>
+<section id="contact" style="background:#003c8f;color:white;">
+<h2 class="section-title" style="color:white;">Contact Us</h2>
+<div style="max-width:900px;margin:auto;text-align:center;">
+<p style="font-size:18px;margin:10px;">
+📞 +91 9951044602
+</p>
+<p style="font-size:18px;margin:10px;">
+📧 toptaxadvisor123@gmail.com
+</p>
+<p style="font-size:18px;margin:10px;">
+📍 12-2-37/1/A/53, Opp: Masjid-e-Mukarramjah, Zeba Bagh, Mehdipatnam, Hyderabad - 500028
+</p>
+<p style="font-size:18px;margin:10px;">
+📸 Instagram: @toptaxadvisor123
+</p>
+<p style="font-size:18px;margin:10px;">
+🌐 www.toptaxadvisor.info
+</p>
+<a href="https://wa.me/919951044602" class="btn">
 Chat on WhatsApp
 </a>
+</div>
 </section>
-
-<footer>
-© 2026 Top Tax Advisor. All Rights Reserved.
+<footer style="background:#001f4d;color:white;text-align:center;padding:25px;">
+<p>© 2026 Top Tax Advisor. All Rights Reserved.</p>
 </footer>
 
+WhatsApp
 </body>
 </html>
